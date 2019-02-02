@@ -1,3 +1,19 @@
-<p>
-  weather works!
-</p>
+<div class="weather">
+    <p-card>
+        <div>
+          <img src="assets/images/usercard.png">
+        </div>
+        <div>
+          <h1>Weather in {{city}}</h1>
+        </div>
+        <div>
+          <img src="{{weather?.icon}}"/>
+          <span>{{weather?.temperature | number: '2.0-2'}} &deg;C</span>
+        </div>
+        
+        <div>
+          {{weather?.clouds}}
+        </div>
+      </p-card>
+</div>
+
